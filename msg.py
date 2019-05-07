@@ -1,15 +1,15 @@
-from selenium import webdriver
 #! python3
 
 """email.py - A program that takes an email address and string of text on the command line and then,
 using Selenium, logs into your email account and sends an email of the string to the provided address."""
 
-# Import essential modules.
-# import sys
-# import os
-# from selenium import webdriver
-# from selenium.webdriver.common.keys import Keys
-# import logging
+#Import essential modules.
+
+import sys
+import os
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import logging
 
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
