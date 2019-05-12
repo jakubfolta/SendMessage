@@ -30,6 +30,7 @@ browser.get(url)
 
 login = sys.argv[1]
 password = sys.argv[2]
-message = ' '.join(sys.argv[3:])
+receiver_email = sys.argv[3]
+message = ' '.join(sys.argv[4:])
 
 # TODO: Send message using selenium.
