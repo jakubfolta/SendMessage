@@ -17,16 +17,16 @@ logging.basicConfig(level = logging.DEBUG, format = '%(levelname)s, %(message)s'
 url = 'http://mail.yahoo.com'
 
 # Check if proper amount of arguments were passed in command line.
-if len(sys.argv) < 2:
-    print('Please pass your login, password, receiver\'s email and a message to send.')
-elif len(sys.argv) < 4:
-    print('You forgot to pass your message.')
+# if len(sys.argv) < 2:
+#     print('Please pass your login, password, receiver\'s email and a message to send.')
+# elif len(sys.argv) < 4:
+#     print('You forgot to pass your message.')
 
 # Set variables with login email, password, email of receiver and a message to send using sys module.
-login = sys.argv[1]
-password = sys.argv[2]
-receiver_email = sys.argv[3]
-message = ' '.join(sys.argv[4:])
+# login = sys.argv[1]
+# password = sys.argv[2]
+# receiver_email = sys.argv[3]
+# message = ' '.join(sys.argv[4:])
 
 # TODO: Open url, enter login and password using selenium module.
 browser = webdriver.Firefox()
