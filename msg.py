@@ -11,9 +11,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import logging
 logging.basicConfig(level = logging.DEBUG, format = '%(levelname)s, %(message)s')
-logging.info('Opening .... ' + os.path.basename(url))
 #logging.disable(logging.CRITICAL)
-
 
 # Set basic url to open.
 url = 'http://mail.yahoo.com'
@@ -33,6 +31,7 @@ message = ' '.join(sys.argv[4:])
 # TODO: Open url, enter login and password using selenium module.
 browser = webdriver.Firefox()
 browser.get(url)
+logging.info('Opening .... ' + os.path.basename(url))
 
 
 # TODO: Send message using selenium.
